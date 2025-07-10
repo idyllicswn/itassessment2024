@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reviews – Grimmy’s Pizzaria</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="scripts.js" defer></script>
+</head>
+<body>
+  <header class="banner">
+    <div class="logo"><img src="images/logo.png" alt="Grimmy’s Logo"></div>
+    <nav>
+      <ul class="main-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1>Customer Reviews</h1>
+    <form id="reviewForm">
+      <label>Name<input type="text" id="revName" required></label>
+      <label>Email<input type="email" id="revEmail" required></label>
+      <label>Rating
+        <span class="stars" id="starGroup">
+          <!-- JS builds 5 stars -->
+        </span>
+      </label>
+      <label>Comment<textarea id="revComment" required></textarea></label>
+      <button type="submit">Submit Review</button>
+    </form>
+
+    <h2>What people are saying</h2>
+    <ul id="reviewList" class="review-list"><!-- JS populates reviews --></ul>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Grimmy’s Pizzaria. Kalanki, Kathmandu | <a href="mailto:order@grimmyspizza.com">Email us</a></p>
+    <nav class="text-nav">
+      <a href="index.html">Home</a> · <a href="menu.html">Menu</a> · <a href="gallery.html">Gallery</a> · <a href="reviews.html">Reviews</a> · <a href="contact.html">Contact</a>
+    </nav>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu – Grimmy’s Pizzaria</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+
+<body>
+    <header class="banner">
+        <div class="logo"><img src="images/logo.png" alt="Grimmy’s Logo"></div>
+        <nav>
+            <ul class="main-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="membership.html">Membership</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container menu-page">
+        <h1>Our Menu</h1>
+        <div id="menuItems" class="menu-items"><!-- JS injects products here --></div>
+
+        <aside class="cart">
+            <h2>Your Cart</h2>
+            <ul id="cartList"></ul>
+            <p id="cartMemberMsg" class="hidden">Member discount applied 🎉</p>
+            <p id="cartTotal">Total: Rs 0</p>
+            <label><input type="radio" name="deliveryType" value="pickup" checked> Pick up</label>
+            <label><input type="radio" name="deliveryType" value="delivery"> Home Delivery (+Rs 100)</label>
+            <button id="buyBtn">Buy Now</button>
+        </aside>
+    </main>
+
+    <!-- Receipt modal -->
+    <div id="receiptModal" class="modal hidden" role="dialog" aria-labelledby="receiptTitle">
+        <div class="modal-content">
+            <h2 id="receiptTitle">Order Receipt</h2>
+            <div id="receiptDetails"></div>
+            <p>Choose payment method:</p>
+            <button class="pay" data-pay="cash">Cash</button>
+            <button class="pay" data-pay="online">Online</button>
+            <p class="thankyou hidden" id="thankYouMsg">😊 Thanks for ordering! Please visit again.</p>
+            <button class="close">Close</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Grimmy’s Pizzaria. Kalanki, Kathmandu | <a href="mailto:order@grimmyspizza.com">Email us</a></p>
+        <nav class="text-nav">
+            <a href="index.html">Home</a> · <a href="menu.html">Menu</a> · <a href="gallery.html">Gallery</a> · <a
+                href="reviews.html">Reviews</a> · <a href="membership.html">Membership</a> · <a
+                href="contact.html">Contact</a>
+        </nav>
+    </footer>
+</body>
+
+</html>
